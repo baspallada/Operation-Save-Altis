@@ -19,7 +19,7 @@ class Mission
 	class Intel
 	{
 		briefingName="[MP/SP] Operation Save Altis";
-		overviewText="You are a civilean you (and your friends) have to bring altis back to peace and protect the citizen from Bluefor";
+		overviewText="You are a civilian you (and your friends) have to bring altis back to peace and protect the citizen from the oppressing government";
 		resistanceWest=0;
 		startWeather=0.29999998;
 		startWind=0.099999994;
@@ -142,7 +142,7 @@ class Mission
 					vehicle="LocationBase_F";
 					leader=1;
 					skill=0.60000002;
-					init="unit_car_dealer_handle = execvm ""shops\carDealer.sqf"";";
+					init="unit_car_dealer_handle = execvm ""startup\startup.sqf"";";
 				};
 			};
 		};
