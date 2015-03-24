@@ -1,1 +1,1 @@
-unit_car_dealer addAction["Buy ATV($1000)", {hint "Sorry out of stock"}];
+unit_car_dealer addAction["Buy ATV($1000)", {hint "NO CAR FOR YO BLACK ASS"}];
