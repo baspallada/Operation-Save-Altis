@@ -19,7 +19,7 @@ class Mission
 	class Intel
 	{
 		briefingName="[MP/SP] Operation Save Altis";
-		overviewText="You are a civilian you (and your friends) have to bring altis back to peace and protect the citizen from the oppressing government";
+		overviewText="You are a civilean you (and your friends) have to bring altis back to peace and protect the citizen from Bluefor";
 		resistanceWest=0;
 		startWeather=0.29999998;
 		startWind=0.099999994;
