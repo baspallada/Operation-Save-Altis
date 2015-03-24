@@ -1,0 +1,259 @@
+version=12;
+class Mission
+{
+	addOns[]=
+	{
+		"A3_Characters_F_Civil",
+		"a3_characters_f",
+		"a3_map_altis",
+		"A3_Modules_F"
+	};
+	addOnsAuto[]=
+	{
+		"A3_Characters_F_Civil",
+		"a3_characters_f",
+		"A3_Modules_F",
+		"a3_map_altis"
+	};
+	randomSeed=6521983;
+	class Intel
+	{
+		briefingName="[MP/SP] Operation Save Altis";
+		overviewText="You are a civilean you (and your friends) have to bring altis back to peace and protect the citizen from Bluefor";
+		resistanceWest=0;
+		startWeather=0.29999998;
+		startWind=0.099999994;
+		startWaves=0.099999994;
+		forecastWeather=0.29999998;
+		forecastWind=0.099999994;
+		forecastWaves=0.099999994;
+		forecastLightnings=0.099999994;
+		year=2015;
+		month=3;
+		day=24;
+		hour=21;
+		minute=45;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+	class Groups
+	{
+		items=3;
+		class Item0
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={3646.3289,10.200861,13114.006};
+					special="NONE";
+					id=0;
+					side="CIV";
+					vehicle="C_man_p_fugitive_F";
+					player="PLAYER COMMANDER";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+					text="player1";
+					init="this addWeapon ""hgun_Rook40_F""; this addMagazine ""16Rnd_9x21_Mag"";this addMagazine ""16Rnd_9x21_Mag"";this addMagazine ""16Rnd_9x21_Mag"";";
+				};
+				class Item1
+				{
+					presenceCondition="isMultiplayer";
+					position[]={3654.937,10.308994,13112.73};
+					special="NONE";
+					id=1;
+					side="CIV";
+					vehicle="C_man_p_fugitive_F";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					text="player2";
+					init="this addWeapon ""hgun_Rook40_F""; this addMagazine ""16Rnd_9x21_Mag"";this addMagazine ""16Rnd_9x21_Mag"";this addMagazine ""16Rnd_9x21_Mag"";";
+				};
+				class Item2
+				{
+					presenceCondition="isMultiplayer";
+					position[]={3646.6479,10.195844,13106.191};
+					special="NONE";
+					id=2;
+					side="CIV";
+					vehicle="C_man_p_fugitive_F";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					text="player3";
+					init="this addWeapon ""hgun_Rook40_F""; this addMagazine ""16Rnd_9x21_Mag"";this addMagazine ""16Rnd_9x21_Mag"";this addMagazine ""16Rnd_9x21_Mag"";";
+				};
+			};
+		};
+		class Item1
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3614.0798,9.756712,13146.45};
+					azimut=107.243;
+					special="NONE";
+					id=3;
+					side="CIV";
+					vehicle="C_man_polo_3_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+					text="unit_car_dealer";
+					init="unit_car_dealer allowDamage false;";
+					description="Micheal Bay";
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3613.2769,9.7303677,13147.502};
+					type="LOITER";
+					speed="NORMAL";
+					combat="CARELESS";
+					name="unit_car_dealer_lose";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item2
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={249.49017,0.18661228,299.00793};
+					id=4;
+					side="LOGIC";
+					vehicle="LocationBase_F";
+					leader=1;
+					skill=0.60000002;
+					init="unit_car_dealer_handle = execvm ""shops\carDealer.sqf"";";
+				};
+			};
+		};
+	};
+	class Markers
+	{
+		items=2;
+		class Item0
+		{
+			position[]={3636.9343,10.140612,13099.368};
+			name="marker_weapons";
+			text="Illegal Weapon Trader";
+			type="o_service";
+		};
+		class Item1
+		{
+			position[]={3613.0967,9.8183784,13150.543};
+			name="marker_legit_dealer";
+			text="Car Dealer";
+			type="c_car";
+			colorName="ColorGreen";
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"a3_map_altis"
+	};
+	addOnsAuto[]=
+	{
+		"a3_map_altis"
+	};
+	randomSeed=9400736;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=6;
+		day=24;
+		hour=12;
+		minute=0;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"a3_map_altis"
+	};
+	addOnsAuto[]=
+	{
+		"a3_map_altis"
+	};
+	randomSeed=16744106;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=6;
+		day=24;
+		hour=12;
+		minute=0;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"a3_map_altis"
+	};
+	addOnsAuto[]=
+	{
+		"a3_map_altis"
+	};
+	randomSeed=12753228;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=6;
+		day=24;
+		hour=12;
+		minute=0;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+};

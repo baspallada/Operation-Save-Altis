@@ -1,0 +1,1 @@
+unit_car_dealer addAction["Buy ATV($1000)", {hint "Sorry out of stock"}];
