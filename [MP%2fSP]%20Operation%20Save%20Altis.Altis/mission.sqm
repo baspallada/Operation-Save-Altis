@@ -6,13 +6,17 @@ class Mission
 		"A3_Characters_F_Civil",
 		"a3_characters_f",
 		"a3_map_altis",
-		"A3_Modules_F"
+		"A3_Modules_F",
+		"A3_Characters_F_OPFOR",
+		"A3_Characters_F_BLUFOR"
 	};
 	addOnsAuto[]=
 	{
 		"A3_Characters_F_Civil",
 		"a3_characters_f",
 		"A3_Modules_F",
+		"A3_Characters_F_OPFOR",
+		"A3_Characters_F_BLUFOR",
 		"a3_map_altis"
 	};
 	randomSeed=6521983;
@@ -31,65 +35,15 @@ class Mission
 		year=2015;
 		month=3;
 		day=24;
-		hour=21;
-		minute=45;
+		hour=12;
+		minute=0;
 		startFogDecay=0.013;
 		forecastFogDecay=0.013;
 	};
 	class Groups
 	{
-		items=3;
+		items=4;
 		class Item0
-		{
-			side="CIV";
-			class Vehicles
-			{
-				items=3;
-				class Item0
-				{
-					position[]={3646.3289,10.200861,13114.006};
-					special="NONE";
-					id=0;
-					side="CIV";
-					vehicle="C_man_p_fugitive_F";
-					player="PLAYER COMMANDER";
-					leader=1;
-					lock="UNLOCKED";
-					skill=0.60000002;
-					text="player1";
-					init="this addWeapon ""hgun_Rook40_F""; this addMagazine ""16Rnd_9x21_Mag"";this addMagazine ""16Rnd_9x21_Mag"";this addMagazine ""16Rnd_9x21_Mag"";";
-				};
-				class Item1
-				{
-					presenceCondition="isMultiplayer";
-					position[]={3654.937,10.308994,13112.73};
-					special="NONE";
-					id=1;
-					side="CIV";
-					vehicle="C_man_p_fugitive_F";
-					player="PLAY CDG";
-					lock="UNLOCKED";
-					skill=0.60000002;
-					text="player2";
-					init="this addWeapon ""hgun_Rook40_F""; this addMagazine ""16Rnd_9x21_Mag"";this addMagazine ""16Rnd_9x21_Mag"";this addMagazine ""16Rnd_9x21_Mag"";";
-				};
-				class Item2
-				{
-					presenceCondition="isMultiplayer";
-					position[]={3646.6479,10.195844,13106.191};
-					special="NONE";
-					id=2;
-					side="CIV";
-					vehicle="C_man_p_fugitive_F";
-					player="PLAY CDG";
-					lock="UNLOCKED";
-					skill=0.60000002;
-					text="player3";
-					init="this addWeapon ""hgun_Rook40_F""; this addMagazine ""16Rnd_9x21_Mag"";this addMagazine ""16Rnd_9x21_Mag"";this addMagazine ""16Rnd_9x21_Mag"";";
-				};
-			};
-		};
-		class Item1
 		{
 			side="CIV";
 			class Vehicles
@@ -100,7 +54,7 @@ class Mission
 					position[]={3614.0798,9.756712,13146.45};
 					azimut=107.243;
 					special="NONE";
-					id=3;
+					id=0;
 					side="CIV";
 					vehicle="C_man_polo_3_F";
 					leader=1;
@@ -128,7 +82,7 @@ class Mission
 				};
 			};
 		};
-		class Item2
+		class Item1
 		{
 			side="LOGIC";
 			class Vehicles
@@ -137,7 +91,7 @@ class Mission
 				class Item0
 				{
 					position[]={249.49017,0.18661228,299.00793};
-					id=4;
+					id=1;
 					side="LOGIC";
 					vehicle="LocationBase_F";
 					leader=1;
@@ -146,15 +100,103 @@ class Mission
 				};
 			};
 		};
+		class Item2
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={3026.2375,38.795914,13243.297};
+					id=2;
+					side="EAST";
+					vehicle="O_officer_F";
+					leader=1;
+					skill=0.60000002;
+				};
+				class Item1
+				{
+					position[]={3034.4695,38.786011,13238.803};
+					id=3;
+					side="EAST";
+					vehicle="O_officer_F";
+					skill=0.60000002;
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3035.0471,36.200809,13247.462};
+					combatMode="RED";
+					speed="NORMAL";
+					combat="AWARE";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item3
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={3647.9089,10.227152,13121.754};
+					special="NONE";
+					id=4;
+					side="WEST";
+					vehicle="B_medic_F";
+					player="PLAYER COMMANDER";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+					text="player1";
+					description="Group leader, retired medic";
+				};
+				class Item1
+				{
+					position[]={3645.4321,10.166615,13110.051};
+					special="NONE";
+					id=5;
+					side="WEST";
+					vehicle="B_engineer_F";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					text="player2";
+					description="OSA Member, retired engineer";
+				};
+				class Item2
+				{
+					position[]={3653.4973,10.287165,13109.096};
+					special="NONE";
+					id=6;
+					side="WEST";
+					vehicle="B_Helipilot_F";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					text="player3";
+					description="OSA Member, retired pilot";
+				};
+			};
+		};
 	};
 	class Markers
 	{
-		items=2;
+		items=3;
 		class Item0
 		{
-			position[]={3636.9343,10.140612,13099.368};
-			name="marker_weapons";
-			text="Illegal Weapon Trader";
+			position[]={3033.5012,32.242931,13261.762};
+			name="marker_outpost_alpha";
+			text="Outpost Alpha";
 			type="o_service";
 		};
 		class Item1
@@ -164,6 +206,12 @@ class Mission
 			text="Car Dealer";
 			type="c_car";
 			colorName="ColorGreen";
+		};
+		class Item2
+		{
+			position[]={3608.1704,9.7107925,13151.876};
+			name="marker_garage";
+			type="Empty";
 		};
 	};
 };

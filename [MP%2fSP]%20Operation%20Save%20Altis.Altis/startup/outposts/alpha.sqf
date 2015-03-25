@@ -1,0 +1,1 @@
+obj_outpost_alpha addAction["<t color='#FF0000'>Capture Outpost</t>", "capture\alpha.sqf"];
