@@ -8,7 +8,8 @@ class Mission
 		"a3_map_altis",
 		"A3_Modules_F",
 		"A3_Characters_F_OPFOR",
-		"A3_Characters_F_BLUFOR"
+		"A3_Characters_F_BLUFOR",
+		"A3_Armor_F_T100K"
 	};
 	addOnsAuto[]=
 	{
@@ -17,6 +18,7 @@ class Mission
 		"A3_Modules_F",
 		"A3_Characters_F_OPFOR",
 		"A3_Characters_F_BLUFOR",
+		"A3_Armor_F_T100K",
 		"a3_map_altis"
 	};
 	randomSeed=6521983;
@@ -42,7 +44,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=4;
+		items=5;
 		class Item0
 		{
 			side="CIV";
@@ -51,7 +53,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={3614.0798,9.756712,13146.45};
+					position[]={21868.225,19.417856,20986.621};
 					azimut=107.243;
 					special="NONE";
 					id=0;
@@ -70,7 +72,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={3613.2769,9.7303677,13147.502};
+					position[]={21867.422,19.646269,20987.674};
 					type="LOITER";
 					speed="NORMAL";
 					combat="CARELESS";
@@ -108,7 +110,8 @@ class Mission
 				items=2;
 				class Item0
 				{
-					position[]={3026.2375,38.795914,13243.297};
+					position[]={21623.209,20.598436,21283.41};
+					azimut=180;
 					id=2;
 					side="EAST";
 					vehicle="O_officer_F";
@@ -117,7 +120,8 @@ class Mission
 				};
 				class Item1
 				{
-					position[]={3034.4695,38.786011,13238.803};
+					position[]={21631.441,21.680571,21278.914};
+					azimut=180;
 					id=3;
 					side="EAST";
 					vehicle="O_officer_F";
@@ -129,7 +133,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={3035.0471,36.200809,13247.462};
+					position[]={21632.02,21.652735,21287.574};
 					combatMode="RED";
 					speed="NORMAL";
 					combat="AWARE";
@@ -148,7 +152,7 @@ class Mission
 				items=3;
 				class Item0
 				{
-					position[]={3650.908,10.255143,13117.66};
+					position[]={21901.143,22.6185,21012.324};
 					special="NONE";
 					id=4;
 					side="WEST";
@@ -162,7 +166,7 @@ class Mission
 				};
 				class Item1
 				{
-					position[]={3645.4321,10.166615,13110.051};
+					position[]={21893.779,22.263691,21005.736};
 					special="NONE";
 					id=5;
 					side="WEST";
@@ -175,7 +179,7 @@ class Mission
 				};
 				class Item2
 				{
-					position[]={3653.4973,10.287165,13109.096};
+					position[]={21901.842,22.259533,21004.781};
 					special="NONE";
 					id=6;
 					side="WEST";
@@ -188,20 +192,58 @@ class Mission
 				};
 			};
 		};
+		class Item4
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={21930.709,19.619141,21014.688};
+					azimut=180;
+					id=7;
+					side="CIV";
+					vehicle="C_man_polo_4_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+					text="unit_gun_dealer";
+					init="unit_gun_dealer allowDamage false;";
+					description="Jumbo's guns 'n stuff";
+				};
+			};
+		};
+	};
+	class Vehicles
+	{
+		items=1;
+		class Item0
+		{
+			position[]={3045.0176,45.063068,13197.864};
+			azimut=180;
+			id=8;
+			side="EMPTY";
+			vehicle="O_MBT_02_cannon_F";
+			leader=1;
+			lock="UNLOCKED";
+			skill=0.60000002;
+			description="Jumbo's guns 'n stuff";
+		};
 	};
 	class Markers
 	{
 		items=3;
 		class Item0
 		{
-			position[]={3041.772,30.563917,13280.282};
+			position[]={21631.643,21.504725,21287.613};
 			name="marker_outpost_alpha";
 			text="Outpost Alpha";
 			type="o_service";
 		};
 		class Item1
 		{
-			position[]={3613.0967,9.8183784,13150.543};
+			position[]={21867.242,20.059628,20990.715};
 			name="marker_legit_dealer";
 			text="Car Dealer";
 			type="c_car";
@@ -209,7 +251,7 @@ class Mission
 		};
 		class Item2
 		{
-			position[]={3608.1704,9.7107925,13151.876};
+			position[]={21862.316,20.635521,20992.047};
 			name="marker_garage";
 			type="Empty";
 		};
