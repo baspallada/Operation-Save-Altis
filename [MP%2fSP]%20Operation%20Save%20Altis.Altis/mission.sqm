@@ -148,7 +148,7 @@ class Mission
 				items=3;
 				class Item0
 				{
-					position[]={3647.9089,10.227152,13121.754};
+					position[]={3650.908,10.255143,13117.66};
 					special="NONE";
 					id=4;
 					side="WEST";
@@ -194,7 +194,7 @@ class Mission
 		items=3;
 		class Item0
 		{
-			position[]={3033.5012,32.242931,13261.762};
+			position[]={3041.772,30.563917,13280.282};
 			name="marker_outpost_alpha";
 			text="Outpost Alpha";
 			type="o_service";

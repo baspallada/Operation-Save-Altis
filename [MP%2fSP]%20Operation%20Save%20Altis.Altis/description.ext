@@ -1,8 +1,8 @@
-OnLoadMission = "A procedurally generated campaign where you earn resources, execute missions and lead the BLUFOR forces to capture the island and win the war.";
-onLoadName = "Dynamic Universal WAR System (DUWS) Modified v2.1";
+OnLoadMission = "A private alpha build.";
+onLoadName = "Operation Save Altis v0.2";
 dev = "dev";
-author = "Kibot / Modified by Too Safe";
-overviewText = "A procedurally generated campaign where you earn resources, execute missions and lead the BLUFOR forces to capture the island and win the war. Play the way you want: be a spec ops, a squad leader or control a whole army, the choice is yours. (In the future, the DUWS will feature persistent elements that allow you to play a single campaign throughout multiple islands.)";
+author = "Created by Too Safe & Runi215";
+overviewText = "A private alpha build.";
 overviewPicture = "rtipic.paa";
 LoadScreen = "rtipic.paa";
 respawnDialog = 0;
