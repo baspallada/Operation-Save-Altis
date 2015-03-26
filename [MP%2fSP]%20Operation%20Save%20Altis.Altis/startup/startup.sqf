@@ -1,5 +1,5 @@
 //Global Variables
-teamMoney=1500;
+teamMoney=2000;
 teamCheckAmount=432;
 
 //spawn objects
@@ -8,9 +8,11 @@ obj_outpost_alpha = createVehicle ["Land_Cargo_Patrol_V1_F", (getMarkerPos "mark
 obj_helipad = createVehicle ["Land_HelipadCircle_F", (getMarkerPos "marker_helipad"), [], 0, "CAN_COLLIDE"];
 
 
-//All scripts
+//Server scripts
 _players = execVM "startup\startPlayers.sqf";
 _outpostAlpha = execVM "startup\outposts\alpha.sqf";
 _paycheck = execVM "startup\paycheck.sqf";
 
+//Shop scripts
 _cardealer = execVM "shops\carDealer.sqf";
+_gundealer = execVM "shops\gunDealer.sqf";
