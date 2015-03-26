@@ -31,7 +31,7 @@ unit_gun_dealer addAction["Buy 16 round 9mm ammunition ($50)",{ //buy pistol amm
         sleep (1);
         player addMagazine "16Rnd_9x21_Mag";
         hint "I want to say don't miss, but I want to get rich!";
-    }else{hint "Are you tring to rip me off, buddy? this clip is worth more then you're carrying.";}
+    }else{hint "Are you tring to rip me off, buddy? This clip is worth more then you're carrying.";}
 }];
 
 unit_gun_dealer addAction["Buy 16 round 9mm ammunition ($75)",{ //buy SMG ammunition
@@ -40,10 +40,6 @@ unit_gun_dealer addAction["Buy 16 round 9mm ammunition ($75)",{ //buy SMG ammuni
         hint "Let me grab that for you";
         sleep (1);
         player addMagazine "30Rnd_9x21_Mag";
-<<<<<<< HEAD
-        hint "I want to say don't miss, but I want to get rich!"
-=======
         hint "I want to say don't miss, but I want to get rich!";
->>>>>>> origin/master
     }else{hint "Are you tring to rip me off, buddy? this clip, is worth more then you're carrying.";}
 }];
