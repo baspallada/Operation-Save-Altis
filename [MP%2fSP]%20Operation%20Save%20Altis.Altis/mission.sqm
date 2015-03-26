@@ -53,7 +53,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={21341.271,14.174385,21069.988};
+					position[]={21928.646,18.727402,20991.432};
 					azimut=107.243;
 					special="NONE";
 					id=0;
@@ -62,8 +62,7 @@ class Mission
 					leader=1;
 					lock="UNLOCKED";
 					skill=0.60000002;
-					text="unit_car_dealer_backup";
-					init="unit_car_dealer allowDamage false; unit_car_dealer disableAI ""MOVE"";";
+					text="unit_car_dealer";
 					description="Micheal Bay";
 				};
 			};
@@ -190,7 +189,7 @@ class Mission
 				class Item0
 				{
 					position[]={21852.293,12.983916,20930.021};
-					azimut=82.660408;
+					azimut=82.6604;
 					special="NONE";
 					id=7;
 					side="CIV";
@@ -199,7 +198,6 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="unit_gun_dealer";
-					init="unit_gun_dealer allowDamage false; unit_gun_dealer disableAI ""MOVE"";";
 					description="Micheal Bay";
 				};
 			};
@@ -221,7 +219,6 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="unit_qm";
-					init="unit_qm disableAI ""MOVE""; unit_qm allowDamage false;";
 					description="Quarter Master";
 				};
 			};

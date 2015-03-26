@@ -21,3 +21,6 @@ allowFunctionsLog = 0;
 
 
 //execvm
+
+#include "defines.hpp"
+#include "dialogs.hpp"

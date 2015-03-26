@@ -6,13 +6,13 @@ class OSA_DIALOG_GUN
     
     class Controls
     {
-
-         
-
-
-
-    };
+       
+	};
 
 
 
 };
+
+
+
+
