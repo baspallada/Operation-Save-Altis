@@ -44,7 +44,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=5;
+		items=6;
 		class Item0
 		{
 			side="CIV";
@@ -53,7 +53,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={21929.023,18.804136,20993.367};
+					position[]={21341.271,14.174385,21069.988};
 					azimut=107.243;
 					special="NONE";
 					id=0;
@@ -62,25 +62,9 @@ class Mission
 					leader=1;
 					lock="UNLOCKED";
 					skill=0.60000002;
-					text="unit_car_dealer";
+					text="unit_car_dealer_backup";
 					init="unit_car_dealer allowDamage false; unit_car_dealer disableAI ""MOVE"";";
 					description="Micheal Bay";
-				};
-			};
-			class Waypoints
-			{
-				items=1;
-				class Item0
-				{
-					position[]={21928.221,18.842937,20994.42};
-					type="LOITER";
-					speed="NORMAL";
-					combat="CARELESS";
-					name="unit_car_dealer_lose";
-					class Effects
-					{
-					};
-					showWP="NEVER";
 				};
 			};
 		};
@@ -205,8 +189,8 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={21855.105,12.999468,20929.67};
-					azimut=107.243;
+					position[]={21852.293,12.983916,20930.021};
+					azimut=82.660408;
 					special="NONE";
 					id=7;
 					side="CIV";
@@ -220,6 +204,28 @@ class Mission
 				};
 			};
 		};
+		class Item5
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={21968.615,24.275146,21039.184};
+					azimut=125.039;
+					offsetY=4;
+					id=8;
+					side="CIV";
+					vehicle="C_man_w_worker_F";
+					leader=1;
+					skill=0.60000002;
+					text="unit_qm";
+					init="unit_qm disableAI ""MOVE""; unit_qm allowDamage false;";
+					description="Quarter Master";
+				};
+			};
+		};
 	};
 	class Vehicles
 	{
@@ -228,7 +234,7 @@ class Mission
 		{
 			position[]={3045.0176,45.063068,13197.864};
 			azimut=180;
-			id=8;
+			id=9;
 			side="EMPTY";
 			vehicle="O_MBT_02_cannon_F";
 			leader=1;
@@ -239,7 +245,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=5;
+		items=6;
 		class Item0
 		{
 			position[]={21631.643,21.504725,21287.613};
@@ -257,14 +263,14 @@ class Mission
 		};
 		class Item2
 		{
-			position[]={21931.045,24.890297,21061.611};
+			position[]={21926.221,17.50349,20972.615};
 			name="marker_garage";
 			text="garage";
 			type="Empty";
 		};
 		class Item3
 		{
-			position[]={22005.045,28.308918,21027.188};
+			position[]={21968.557,24.18004,21039.117};
 			name="marker_qm";
 			text="Quarter Master";
 			type="u_installation";
@@ -275,6 +281,13 @@ class Mission
 			position[]={22005.725,29.053617,21075.83};
 			name="marker_helipad";
 			text="helipad";
+			type="Empty";
+		};
+		class Item5
+		{
+			position[]={21929.002,18.692427,20990.723};
+			name="marker_car_dealer";
+			text="car dealer";
 			type="Empty";
 		};
 	};
