@@ -53,7 +53,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={21868.225,19.417856,20986.621};
+					position[]={21929.023,18.804136,20993.367};
 					azimut=107.243;
 					special="NONE";
 					id=0;
@@ -63,7 +63,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="unit_car_dealer";
-					init="unit_car_dealer allowDamage false;";
+					init="unit_car_dealer allowDamage false; unit_car_dealer disableAI ""MOVE"";";
 					description="Micheal Bay";
 				};
 			};
@@ -72,7 +72,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={21867.422,19.646269,20987.674};
+					position[]={21928.221,18.842937,20994.42};
 					type="LOITER";
 					speed="NORMAL";
 					combat="CARELESS";
@@ -152,7 +152,8 @@ class Mission
 				items=3;
 				class Item0
 				{
-					position[]={21901.143,22.6185,21012.324};
+					position[]={22023.086,30.101431,21066.76};
+					azimut=-130.01483;
 					special="NONE";
 					id=4;
 					side="WEST";
@@ -166,7 +167,8 @@ class Mission
 				};
 				class Item1
 				{
-					position[]={21893.779,22.263691,21005.736};
+					position[]={21978.625,29.644403,21094.406};
+					azimut=-180.983;
 					special="NONE";
 					id=5;
 					side="WEST";
@@ -175,11 +177,13 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="player2";
+					init="if (!isMultiplayer) then {deleteVehicle player2}";
 					description="OSA Member, retired engineer";
 				};
 				class Item2
 				{
-					position[]={21901.842,22.259533,21004.781};
+					position[]={21970.533,29.225935,21095.23};
+					azimut=-180.983;
 					special="NONE";
 					id=6;
 					side="WEST";
@@ -188,6 +192,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="player3";
+					init="if (!isMultiplayer) then {deleteVehicle player3}";
 					description="OSA Member, retired pilot";
 				};
 			};
@@ -200,17 +205,18 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={21930.709,19.619141,21014.688};
-					azimut=180;
+					position[]={21855.105,12.999468,20929.67};
+					azimut=107.243;
+					special="NONE";
 					id=7;
 					side="CIV";
-					vehicle="C_man_polo_4_F";
+					vehicle="C_man_p_fugitive_F";
 					leader=1;
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="unit_gun_dealer";
-					init="unit_gun_dealer allowDamage false;";
-					description="Jumbo's guns 'n stuff";
+					init="unit_gun_dealer allowDamage false; unit_gun_dealer disableAI ""MOVE"";";
+					description="Micheal Bay";
 				};
 			};
 		};
@@ -233,7 +239,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=3;
+		items=5;
 		class Item0
 		{
 			position[]={21631.643,21.504725,21287.613};
@@ -243,7 +249,7 @@ class Mission
 		};
 		class Item1
 		{
-			position[]={21867.242,20.059628,20990.715};
+			position[]={21923.193,18.929834,20996.205};
 			name="marker_legit_dealer";
 			text="Car Dealer";
 			type="c_car";
@@ -251,8 +257,24 @@ class Mission
 		};
 		class Item2
 		{
-			position[]={21862.316,20.635521,20992.047};
+			position[]={21931.045,24.890297,21061.611};
 			name="marker_garage";
+			text="garage";
+			type="Empty";
+		};
+		class Item3
+		{
+			position[]={22005.045,28.308918,21027.188};
+			name="marker_qm";
+			text="Quarter Master";
+			type="u_installation";
+			colorName="ColorBlue";
+		};
+		class Item4
+		{
+			position[]={22005.725,29.053617,21075.83};
+			name="marker_helipad";
+			text="helipad";
 			type="Empty";
 		};
 	};

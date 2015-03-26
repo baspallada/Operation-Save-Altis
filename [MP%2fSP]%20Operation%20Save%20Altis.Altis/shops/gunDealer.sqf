@@ -29,8 +29,8 @@ unit_gun_dealer addAction["Buy 16 round 9mm ammunition",{ //buy pistol ammunitio
         teamMoney = teamMoney - 50;
         hint "Let me grab that for you";
         sleep (1);
-        player addMagazine "16Rnd_9x21_Mag"
-        hint "I want to say don't miss, but I want to get rich!"
+        player addMagazine "16Rnd_9x21_Mag";
+        hint "I want to say don't miss, but I want to get rich!";
     }else{hint "Are you tring to rip me off, buddy? this clip is worth more then you're carrying.";}
 }];
 
@@ -39,7 +39,7 @@ unit_gun_dealer addAction["Buy 16 round 9mm ammunition",{ //buy SMG ammunition
         teamMoney = teamMoney - 50;
         hint "Let me grab that for you";
         sleep (1);
-        player addMagazine "30Rnd_9x21_Mag"
+        player addMagazine "30Rnd_9x21_Mag";
         hint "I want to say don't miss, but I want to get rich!"
     }else{hint "Are you tring to rip me off, buddy? this clip, is worth more then you're carrying.";}
 }];
