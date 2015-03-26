@@ -1,16 +1,8 @@
-class OSA_DIALOG_GUN
-{
-    idd = -1;
-    movingenable = true;
-   
-    
-    class Controls
-    {
-       ////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////
 // GUI EDITOR OUTPUT START (by DevelopmentOSA, v1.063, #Puqori)
 ////////////////////////////////////////////////////////
 
-class gunstore_background: RscFrame
+class gunstore_background: IGUIBack
 {
 	idc = 2201;
 	x = 0.245 * safezoneW + safezoneX;
@@ -74,13 +66,3 @@ class gunstore_button_ammo: RscButton
 ////////////////////////////////////////////////////////
 // GUI EDITOR OUTPUT END
 ////////////////////////////////////////////////////////
-
-	};
-
-
-
-};
-
-
-
-
