@@ -12,7 +12,7 @@ unit_gun_dealer addAction["Buy Rook 40 ($250)",{ //Buy rook pistol + 1 free mag
 }];
     
 unit_gun_dealer addAction["Buy Sting ($500)",{ //Buy sting SMG + 1 free mag
-    if (teamMoney>499) then 
+    if (teamMoney>499) then {
         teamMoney = teamMoney - 500;
         hint "Where did i put it?";
         sleep(2);
@@ -34,7 +34,7 @@ unit_gun_dealer addAction["Buy 16 round 9mm ammunition ($50)",{ //buy pistol amm
     }else{hint "Are you tring to rip me off, buddy? This clip is worth more then you're carrying.";}
 }];
 
-unit_gun_dealer addAction["Buy 16 round 9mm ammunition ($75)",{ //buy SMG ammunition
+unit_gun_dealer addAction["Buy 30 round 9mm ammunition ($75)",{ //buy SMG ammunition
     if (teamMoney>49) then{
         teamMoney = teamMoney - 50;
         hint "Let me grab that for you";
