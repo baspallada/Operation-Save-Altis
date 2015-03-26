@@ -21,6 +21,7 @@ removeAllWeapons player3;
 
 player1 forceAddUniform "U_C_Poor_1";
 player1 addAction ["<t color='#770077'>Development Heli</t>", {_wut = "B_Heli_Light_01_F" createVehicle position player1}];
+player1 addAction ["<t color='#770077'>Development Car</t>", {_wut = "C_SUV_01_F" createVehicle position player1}];
 player1 addWeapon "hgun_Rook40_F";
 player1 addMagazine "16Rnd_9x21_Mag";
 player1 addMagazine "16Rnd_9x21_Mag";
