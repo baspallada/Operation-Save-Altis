@@ -1,4 +1,4 @@
-class OSA_DIALOG
+class OSA_DIALOG_GUN
 {
     idd = -1;
     movingenable = true;
