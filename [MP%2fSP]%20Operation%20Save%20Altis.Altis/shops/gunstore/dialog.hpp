@@ -58,6 +58,7 @@ class gunstore_button_gun: RscButton
 	colorText[] = {1,1,1,1};
 	colorBackground[] = {0.27,0.49,0.62,1};
 	colorActive[] = {0,0,0,0};
+	action = "_nil=[]ExecVM ""shops\gunstore\buy_gun.sqf""";
 };
 class gunstore_button_ammo: RscButton
 {
@@ -70,6 +71,7 @@ class gunstore_button_ammo: RscButton
 	colorText[] = {1,1,1,1};
 	colorBackground[] = {0.27,0.49,0.62,1};
 	colorActive[] = {0.27,0.49,0.62,1};
+	action = "_nil=[]ExecVM ""shops\gunstore\buy_ammo.sqf""";
 };
 
 class gunshop_text_guns: RscText
