@@ -22,5 +22,8 @@ allowFunctionsLog = 0;
 
 //execvm
 
+
+
+//include GUI files
 #include "defines.hpp"
-#include "dialogs.hpp"
+#include "shops\gunstore\dialog.hpp"

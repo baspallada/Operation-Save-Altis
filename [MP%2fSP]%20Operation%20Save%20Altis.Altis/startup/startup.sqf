@@ -7,6 +7,7 @@ teamGun=0;
 teamBoat=0;
 teamEquiment=0;
 teamDefences=0;
+qmOptionCounter=0;
 
 //spawn objects
 //obj_hostile_outpost = "Land_Cargo_Patrol_V1_F" createVehicle getMarkerPos "marker_outpost_alpha";
@@ -21,8 +22,15 @@ _outpostAlpha = execVM "startup\outposts\alpha.sqf";
 _paycheck = execVM "startup\paycheck.sqf";
 
 
-//Shop scripts
+//Quarter Master (also working as shop handler/booter)
 _qmaster = execVM "shops\quarterMaster.sqf";
+
+
+
+//Shop scripts -- TODO: GUI THE SHIT OUT OF IT
 _cardealer = execVM "shops\carDealer.sqf";
-_gundealer = execVM "shops\gunDealer.sqf";
+
+
+
+
 
