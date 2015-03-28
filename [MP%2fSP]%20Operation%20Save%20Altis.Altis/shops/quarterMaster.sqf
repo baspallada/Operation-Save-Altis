@@ -36,13 +36,13 @@ switch (teamGun) do {
 		unit_qm addAction["Unlock Gunstore", "unlocks\gun.sqf"];
 	};
 	case 1: {
-		unit_qm addAction["Unlock Gunstore", "unlocks\gun.sqf"];
+		unit_qm addAction["Upgrade Gunstore level 2", "unlocks\gun.sqf"];
 	};
 	case 2: {
-		unit_qm addAction["Unlock Gunstore", "unlocks\gun.sqf"];
+		unit_qm addAction["Upgrade Gunstore level 3", "unlocks\gun.sqf"];
 	};
 	case 3: {
-		unit_qm addAction["Unlock Gunstore", "unlocks\gun.sqf"];
+		unit_qm addAction["Upgrade Gunstore level 4", "unlocks\gun.sqf"];
 	};
 	case 4: {
 		unit_qm addAction["Research new Guns", "unlocks\gun.sqf"];

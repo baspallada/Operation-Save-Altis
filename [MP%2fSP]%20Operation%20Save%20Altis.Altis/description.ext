@@ -20,10 +20,14 @@ disabledAI = 1;
 allowFunctionsLog = 0;
 
 
-//execvm
+
+//define style (like css).
+#include "defines.hpp"
+
+
 
 
 
 //include GUI files
-#include "defines.hpp"
 #include "shops\gunstore\dialog.hpp"
+#include "shops\cardealer\dialog.hpp"

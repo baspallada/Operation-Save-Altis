@@ -2,7 +2,7 @@ switch (teamVehicle) do {
 	case 0:{
 		teamVehicle=1;
 		hint "Unlocked Car Dealer!";
-		unit_car_dealer addAction["Open Shop Garage", ""];
+		unit_car_dealer addAction["Open Shop Garage", {_null = execVM "shops\cardealer\store.sqf"}];
 		_null = execVM "functions\reloadQM.sqf";
 	};
 	default {

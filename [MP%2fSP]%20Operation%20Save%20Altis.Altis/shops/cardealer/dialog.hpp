@@ -57,6 +57,7 @@ class car_store_button: RscButton
 	w = 0.143344 * safezoneW;
 	h = 0.0340016 * safezoneH;
 	colorText[] = {1,1,1,1};
+    action = "_nil=[]ExecVM ""shops\cardealer\buy_car.sqf""";
 };
 ////////////////////////////////////////////////////////
 // GUI EDITOR OUTPUT END

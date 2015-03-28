@@ -10,7 +10,7 @@ if(teamVehicle>0) then {
 			_loneDriver = createGroup civilian;
 			_mycar = "C_Quadbike_01_F" createVehicle getMarkerPos "marker_garage";
 			_mycar setDir -92.8401;
-			_mycar setPos [getPos _mycar select 0, getPos _mycar select 1, 0.54];
+			_mycar setPos [getMarkerPos "marker_garage" select 0, getMarkerPos "marker_garage" select 1, 0.54];
 			hint "Your vehicle is ready! Thanks for doing business!";
 		} else {hint "Are you trying to rip me off? This vehicle is worth more than you are carrying.";}
 	}];

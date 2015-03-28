@@ -63,6 +63,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="unit_car_dealer";
+					init="unit_car_dealer allowDamage false; unit_car_dealer disableAI ""MOVE""; ""marker_car_dealer"" setMarkerAlpha 0;";
 					description="Micheal Bay";
 				};
 			};
@@ -135,8 +136,8 @@ class Mission
 				items=3;
 				class Item0
 				{
-					position[]={22023.086,30.101431,21066.76};
-					azimut=-130.01483;
+					position[]={22021.416,29.891695,21064.818};
+					azimut=-130.69319;
 					special="NONE";
 					id=4;
 					side="WEST";
@@ -150,8 +151,8 @@ class Mission
 				};
 				class Item1
 				{
-					position[]={21978.625,29.644403,21094.406};
-					azimut=-180.983;
+					position[]={21978.234,29.619034,21094.463};
+					azimut=-178.38492;
 					special="NONE";
 					id=5;
 					side="WEST";
@@ -165,8 +166,8 @@ class Mission
 				};
 				class Item2
 				{
-					position[]={21970.533,29.225935,21095.23};
-					azimut=-180.983;
+					position[]={21970.193,29.27663,21095.66};
+					azimut=-178.38492;
 					special="NONE";
 					id=6;
 					side="WEST";
@@ -188,8 +189,8 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={21852.293,12.983916,20930.021};
-					azimut=82.6604;
+					position[]={21872.621,12.960117,20902.301};
+					azimut=-0.365805;
 					special="NONE";
 					id=7;
 					side="CIV";
@@ -198,6 +199,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="unit_gun_dealer";
+					init="unit_gun_dealer allowDamage false; unit_gun_dealer disableAI ""MOVE""; ""marker_gunstore"" setMarkerAlpha 0;";
 					description="Micheal Bay";
 				};
 			};
@@ -219,6 +221,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="unit_qm";
+					init="unit_qm allowDamage false; unit_qm disableAI ""MOVE"";";
 					description="Quarter Master";
 				};
 			};
@@ -242,7 +245,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=6;
+		items=7;
 		class Item0
 		{
 			position[]={21631.643,21.504725,21287.613};
@@ -253,7 +256,7 @@ class Mission
 		class Item1
 		{
 			position[]={21923.193,18.929834,20996.205};
-			name="marker_legit_dealer";
+			name="marker_car_dealer";
 			text="Car Dealer";
 			type="c_car";
 			colorName="ColorGreen";
@@ -282,10 +285,18 @@ class Mission
 		};
 		class Item5
 		{
-			position[]={21929.002,18.692427,20990.723};
-			name="marker_car_dealer";
-			text="car dealer";
-			type="Empty";
+			position[]={25272.547,84.416817,21817.83};
+			name="marker_vehicle_research";
+			text="Vehicle Research Centre";
+			type="flag_CSAT";
+		};
+		class Item6
+		{
+			position[]={21872.598,12.946887,20903.188};
+			name="marker_gunstore";
+			text="Gunstore";
+			type="KIA";
+			colorName="ColorUNKNOWN";
 		};
 	};
 };

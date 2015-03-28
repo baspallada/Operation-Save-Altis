@@ -27,10 +27,6 @@ _qmaster = execVM "shops\quarterMaster.sqf";
 
 
 
-//Shop scripts -- TODO: GUI THE SHIT OUT OF IT
-_cardealer = execVM "shops\carDealer.sqf";
-
-
 
 
 
